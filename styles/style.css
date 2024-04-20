@@ -1,0 +1,14 @@
+@import url("header.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --background-color: #C4C4C4;
+    --header-color: #FFFFFF;
+    --laranja-texto: #EB9B00;
+    --azul-texto: #002F52;
+}
+
+body {
+    background-color: var(--background-color);
+}
+

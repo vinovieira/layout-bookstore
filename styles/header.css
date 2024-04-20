@@ -1,0 +1,57 @@
+.cabecalho__menu-hamburguer {
+    background-image: url("../img/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    background-position: center;
+}
+
+.cabecalho {
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked~.lista__menu {
+    display: block;
+}
+
+.lista__menu__titulo, 
+.lista__menu__item {
+    background-color: var(--header-color);
+    padding: 1em;
+}
+
+/* substituir cores por gradiente quando tiver figma pro */
+.lista__menu__link {
+    text-decoration: none;
+    color: var(--azul-texto);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+/* substituir cores por gradiente quando tiver figma pro */
+.lista__menu__titulo {
+    color: var(--laranja-texto);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
