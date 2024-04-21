@@ -44,14 +44,19 @@
 /* substituir cores por gradiente quando tiver figma pro */
 .lista__menu__link {
     text-decoration: none;
-    color: var(--azul-texto);
-    font-family: "Poppins", sans-serif;
+    background: var(--azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 400;
 }
 
 /* substituir cores por gradiente quando tiver figma pro */
 .lista__menu__titulo {
     color: var(--laranja-texto);
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
+}
+
+.container__botao {
+    display: none;
 }
