@@ -41,35 +41,138 @@
                 <a href="#" ><img src="/img/Usuario.svg" class="container__imagem" alt="icone usuario"></a>
             </div>
     </header>
+
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__paragrafo">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input class="banner__input" type="search" placeholder="Qual será sua próxima leitura?">
     </section>
+
     <section class="carrossel">
         <h3 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h3>
         <!-- Slider main container -->
-<div class="swiper">
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"> <img src="/img/ApacheKafka.svg" alt="Livro da alura sobre ApacheKafka"></div>
-      <div class="swiper-slide"> <img src="/img/Arquitetura.svg" alt="Livro da Alura sobre Arquitetura"></div>
-      <div class="swiper-slide"> <img src="/img/Javascript.svg" alt="Livro da Alura sobre Javascript"></div>
-      <div class="swiper-slide"> <img src="/img/Portugol.svg" alt="Livro da Alura sobre Portugol"></div>
-      <div class="swiper-slide"> <img src="/img/Tuning.svg" alt="Livro da Alura sobre Tuning"></div>
-    </div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"> <img src="/img/ApacheKafka.svg" alt="Livro da alura sobre ApacheKafka"></div>
+            <div class="swiper-slide"> <img src="/img/Arquitetura.svg" alt="Livro da Alura sobre Arquitetura"></div>
+            <div class="swiper-slide"> <img src="/img/Javascript.svg" alt="Livro da Alura sobre Javascript"></div>
+            <div class="swiper-slide"> <img src="/img/Portugol.svg" alt="Livro da Alura sobre Portugol"></div>
+            <div class="swiper-slide"> <img src="/img/Tuning.svg" alt="Livro da Alura sobre Tuning"></div>
+        </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </section>
+    
+    <div class="card">
+        <!-- primeira linha -->
+        <div class="card__descricao__imagem">
+            <!-- primeira coluna -->
+            <div class="card__descricao">
+                <h3 class="card__titulo">Talvez você também se interesse por...</h3>
+                <h2 class="card__titulo__livro">Angular 11 e Firebase</h2>
+                <p class="card__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+            <!-- segunda coluna -->
+            <img class="card__imagem" src="/img/Angular.svg" alt="Logo do Angular">
+        </div>
+            <!-- segunda linha -->
+        <div class="card__botoes">
+        <!-- primeira coluna  -->
+            <div class="card__icones">
+                <a href="#"><img src="/img/Favoritos.svg" alt="Icone Favoritos"></a>
+                <a href="#"><img src="/img/Compras.svg" alt="Icone Compras"></a>
+            </div>
+            <!-- segunda coluna -->
+            <button class="card__botao">Saiba mais</button>
+        </div>
+    </div>
+
+    <section class="carrossel">
+        <h3 class="carrossel__titulo">MAIS VENDIDOS</h3>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"> <img src="/img/ApacheKafka.svg" alt="Livro da alura sobre ApacheKafka"></div>
+            <div class="swiper-slide"> <img src="/img/Arquitetura.svg" alt="Livro da Alura sobre Arquitetura"></div>
+            <div class="swiper-slide"> <img src="/img/Javascript.svg" alt="Livro da Alura sobre Javascript"></div>
+            <div class="swiper-slide"> <img src="/img/Portugol.svg" alt="Livro da Alura sobre Portugol"></div>
+            <div class="swiper-slide"> <img src="/img/Tuning.svg" alt="Livro da Alura sobre Tuning"></div>
+        </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <div class="card">
+        <!-- primeira linha -->
+        <div class="card__descricao__imagem">
+            <!-- primeira coluna -->
+            <div class="card__descricao">
+                <img class="card__icone__estrelas" src="/img/Estrelinhas.svg" alt="Icone de 5 estrelas">
+                <h3 class="card__titulo">Autora do Mês</h3>
+                <h2 class="card__titulo__livro">Juliana Agarikov</h2>
+                <p class="card__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+            </div>
+            <!-- segunda coluna -->
+            <img class="card__imagem" src="/img/Escritora1.svg" alt="Logo do Angular">
+        </div>
+            <!-- segunda linha -->
+        <div class="card__botoes">
+        <!-- primeira coluna  -->
+            <div class="card__icones">
+                <a href="#"><img src="/img/Favoritos.svg" alt="Icone Favoritos"></a>
+                <a href="#"><img src="/img/Compras.svg" alt="Icone Compras"></a>
+            </div>
+            <!-- segunda coluna -->
+            <button class="card__botao">Saiba mais</button>
+        </div>
+    </div>
+
+    <section class="topicos">
+        <h3 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h3>
+        <ul class="topicos__lista">
+            <li class="topicos__lista__item" ><a class="topicos__lista__link" href="">Android</a></li>
+            <li class="topicos__lista__item" ><a class="topicos__lista__link" href="">Marketing Digital</a></li>
+            <li class="topicos__lista__item" ><a class="topicos__lista__link" href="">Agile</a></li>
+            <li class="topicos__lista__item" ><a class="topicos__lista__link" href="">Startups</a></li>
+            <li class="topicos__lista__item" ><a class="topicos__lista__link" href="">HTML & CSS</a></li>
+            <li class="topicos__lista__item" ><a class="topicos__lista__link" href="">Pyton</a></li>
+            <li class="topicos__lista__item" ><a class="topicos__lista__link" href="">OO</a></li>
+            <li class="topicos__lista__item" ><a class="topicos__lista__link" href="">Java</a></li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input class="contato__input" type="email" placeholder="Cadastre seu e-mail">
+    </section>
+    
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Vieira</h2>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
     const swiper = new Swiper('.swiper', {

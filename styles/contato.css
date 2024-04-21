@@ -1,0 +1,43 @@
+.contato {
+    background: var(--header-color);
+    text-align: left;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contato__titulo, 
+.contato__texto {
+    background: var(--azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-weight: 300;
+}
+
+.contato__input {
+    border-radius: 24px;
+    padding: .8em;
+    border: 1px solid var(--azul-texto);
+    font-family: var(--fonte-principal);
+    color: var(--azul-degrade);
+}
+
+.contato__input::placeholder {
+    color: var(--azul-degrade);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    background-image: url("../img/Email.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 2em;
+}
