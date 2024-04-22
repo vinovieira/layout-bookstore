@@ -26,6 +26,20 @@
     color: var(--header-color);
     padding: 0.5em 1.2em;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topicos__lista__item {
+        margin: 1.5em 0.5em;
+    }
+
+    .topicos__lista__link {
+        font-size: 24px;
+    }
 }

@@ -34,6 +34,34 @@
                     </li>
                 </ul>
                 <img class="container__imagem" src="/img/Logo.svg" alt="icone menu">
+                <h1 class="cabecalho__titulo"><b class="cabecalho__titulo__negrito">Alura</b>Books</h1>
+            </div>
+            <div class="cabecalho__menu">
+                <ul class="cabecalho__menu__lista">
+                    <input type="checkbox" id="menu__categorias" class="botao__categorias">
+                    <label for="menu__categorias">
+                        <li class="cabecalho__menu__item">CATEGORIAS</li>
+                    </label>
+                    <ul class="lista__menu">
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">PROGRAMAÇÃO</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">FRONT-END</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">INFRAESTRUTURA</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">BUSINESS</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">DESIGN & UX</a>
+                        </li>
+                    </ul>
+                    <li class="cabecalho__menu__item"><a class="cabecalho__menu__link" href="#">FAVORITOS</a></li>
+                    <li class="cabecalho__menu__item"><a class="cabecalho__menu__link" href="#">MINHA ESTANTE</a></li>
+                </ul>
             </div>
             <div class="cabecalho__container">
                 <a href="#" ><img src="/img/Favoritos.svg" class="container__imagem" alt="icone favoritos"></a>
@@ -162,8 +190,10 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__coluna">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input class="contato__input" type="email" placeholder="Cadastre seu e-mail">
     </section>
     
@@ -181,6 +211,10 @@
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
         },
       });</script>
 </body>

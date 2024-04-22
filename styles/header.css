@@ -60,3 +60,46 @@
 .container__botao {
     display: none;
 }
+
+.cabecalho__titulo {
+    display: none;
+}
+
+.cabecalho__menu__lista {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__titulo {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        display: block;
+    }
+
+    .cabecalho__titulo__negrito {
+        font-weight: 700;
+    }
+
+    .cabecalho__menu__lista {
+        display: flex;
+    }
+
+    .cabecalho__menu__link {
+        padding: 1em;
+        text-decoration: none;
+        color: black;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .botao__categorias:checked~.lista__menu {
+        display: block;
+        width: auto;
+    }
+
+    .botao__categorias {
+        display: none;
+    }
+}
