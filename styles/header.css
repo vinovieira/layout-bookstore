@@ -31,6 +31,14 @@
     width: 60vw;
 }
 
+.container__botao:checked~.cabecalho__menu__label>.cabecalho__menu-hamburguer {
+    background-image: url("../img/Menu Aberto.svg");
+}
+
+.container__botao:checked~.cabecalho__menu__label {
+    background: var(--azul-degrade);
+}
+
 .container__botao:checked~.lista__menu {
     display: block;
 }
@@ -57,19 +65,12 @@
     font-weight: 700;
 }
 
-.container__botao {
-    display: none;
-}
-
-.cabecalho__titulo {
-    display: none;
-}
-
-.cabecalho__menu__lista {
+.container__botao, .cabecalho__titulo, .cabecalho__menu__lista, .cabecalho__container__texto{
     display: none;
 }
 
 @media screen and (min-width: 1024px) {
+    
     .cabecalho__titulo {
         font-family: var(--fonte-secundaria);
         font-size: 30px;
@@ -84,14 +85,38 @@
         display: flex;
     }
 
-    .cabecalho__menu__link {
+    .cabecalho__menu__item {
         padding: 1em;
+    }
+
+    .cabecalho__menu__link {
         text-decoration: none;
         color: black;
     }
 
     .cabecalho__menu-hamburguer {
         display: none;
+    }
+
+    .lista__menu__item:hover {
+        background: var(--azul-degrade);
+    }
+    
+    .lista__menu__item:hover>.lista__menu__link {
+        -webkit-text-fill-color: var(--header-color);
+    }
+
+    .botao__categorias:checked~.menu__categorias__label {
+        color: var(--header-color);
+        background: var(--azul-degrade);
+    }
+    
+    .botao__categorias:checked~.menu__categorias__label>.cabecalho__menu__item {
+        padding: 1.7em 1em;
+    }
+    
+    .botao__categorias:checked~.cabecalho__menu__item {
+        padding: 1.7em 1em;
     }
 
     .botao__categorias:checked~.lista__menu {
@@ -102,4 +127,41 @@
     .botao__categorias {
         display: none;
     }
+
+    .icone__favoritos {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho__container__texto{
+        display: block;
+        margin-right: 1.5em;
+    }
+
+    .cabecalho__container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+    
+    .cabecalho__titulo {
+        font-size: 30px;
+    }
+
+    .icone__favoritos {
+        display: none;
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .cabecalho__menu {
+        margin-right: auto;
+        margin-left: 2em;
+    }
+
 }
