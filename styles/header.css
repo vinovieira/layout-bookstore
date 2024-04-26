@@ -18,6 +18,7 @@
 .cabecalho__container {
     display: flex;
     align-items: center;
+    z-index: 1000;
 }
 
 .container__imagem {
@@ -46,7 +47,7 @@
 .lista__menu__titulo, 
 .lista__menu__item {
     background-color: var(--header-color);
-    padding: 1em;
+    padding: 1.3em;
 }
 
 /* substituir cores por gradiente quando tiver figma pro */
@@ -104,7 +105,7 @@
     
     .lista__menu__item:hover>.lista__menu__link {
         -webkit-text-fill-color: var(--header-color);
-    }
+        }
 
     .botao__categorias:checked~.menu__categorias__label {
         color: var(--header-color);
